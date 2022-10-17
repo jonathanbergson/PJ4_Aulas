@@ -1,4 +1,6 @@
-﻿namespace Aula_22_10_17_Composite
+﻿using System;
+
+namespace Aula_22_10_17_Composite
 {
     class Program
     {
@@ -24,6 +26,7 @@
             ajuda.Add(introducao);
             
             arquivo.Print();
+            Console.WriteLine();
             editar.Print();
         }
     }

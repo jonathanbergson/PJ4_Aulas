@@ -7,6 +7,6 @@
         public virtual void Remove(MenuComponent comp) { }
         public virtual MenuComponent getChild(int i) { return null; }
         public virtual string getName() { return ""; }
-        public virtual void Print() { }
+        public virtual void Print(bool space = false) { }
     }
 }

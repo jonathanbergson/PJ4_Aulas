@@ -26,10 +26,24 @@ namespace Aula_22_10_17_Composite
         {
             return name;
         }
-        public override void Print()
+        public override void Print(bool space = false)
         {
-            Console.WriteLine(name);
-            foreach (MenuComponent m in list) m.Print();
+            if (space)
+            {
+                Console.Write("\t");
+                Console.WriteLine(name);
+                foreach (MenuComponent m in list)
+                {
+                    Console.Write("\t");
+                    m.Print(true);
+                }
+            } 
+            else
+            {
+                Console.WriteLine(name);
+                foreach (MenuComponent m in list) m.Print(true);
+            }
+
         }
     }
 }
