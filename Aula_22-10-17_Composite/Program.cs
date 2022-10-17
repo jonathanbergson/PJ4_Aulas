@@ -9,6 +9,7 @@ namespace Aula_22_10_17_Composite
             Menu arquivo = new Menu("Arquivo"); 
             Menu editar = new Menu("Editar"); 
             Menu ajuda = new Menu("Ajuda");
+            Menu muitaAjuda = new Menu("Realmente Preciso de Ajuda");
 
             Item novo = new Item("Novo");
             Item salvar = new Item("Salvar"); 
@@ -24,6 +25,7 @@ namespace Aula_22_10_17_Composite
             editar.Add(colar);
 
             ajuda.Add(introducao);
+            ajuda.Add(muitaAjuda);
             
             arquivo.Print();
             Console.WriteLine();

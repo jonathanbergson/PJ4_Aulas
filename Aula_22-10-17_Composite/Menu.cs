@@ -28,22 +28,14 @@ namespace Aula_22_10_17_Composite
         }
         public override void Print(bool space = false)
         {
-            if (space)
-            {
-                Console.Write("\t");
-                Console.WriteLine(name);
-                foreach (MenuComponent m in list)
-                {
-                    Console.Write("\t");
-                    m.Print(true);
-                }
-            } 
-            else
-            {
-                Console.WriteLine(name);
-                foreach (MenuComponent m in list) m.Print(true);
-            }
+            if (space) Console.Write("\t");
+            Console.WriteLine(name);
 
+            foreach (MenuComponent m in list)
+            {
+                if (space) Console.Write("\t");
+                m.Print(true);
+            }
         }
     }
 }
